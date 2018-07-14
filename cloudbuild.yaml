@@ -1,10 +1,10 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '--tag=gcr.io/$PROJECT_ID/flerpo_diagnoskod:$COMMIT_SHA', '.']
-  dir: '/'
+  dir: ''
 
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'gcr.io/$PROJECT_ID/flerpo_diagnoskod']
-  dir: '/'
+  dir: ''
 
 images: ['gcr.io/$PROJECT_ID/flerpo_diagnoskod:$COMMIT_SHA']
