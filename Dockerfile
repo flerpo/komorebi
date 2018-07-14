@@ -1,4 +1,4 @@
-FROM alpine/python/latest
+FROM python:3-alpine
 WORKDIR /service
 COPY . .
 RUN pip install -r requirements.txt
