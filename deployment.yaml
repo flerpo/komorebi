@@ -1,0 +1,15 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: flerpo_diagnoskod
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: flerpo_diagnoskod
+    spec:
+      containers:
+      - name: flerpo_diagnoskod
+        image: gcr.io/gazonk-210219/flerpo_diagnoskod:$COMMIT_SHA
+
