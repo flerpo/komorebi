@@ -1,0 +1,10 @@
+runtime: python36
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  script: start_service.py
+
+- url: /.*
+  script: not_found.app

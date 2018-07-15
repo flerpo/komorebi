@@ -5,4 +5,9 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'gcr.io/$PROJECT_ID/flerpo_diagnoskod']
 
+
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['gcloud', 'app', 'deploy', ' --project', '$project_name']
+
+
 images: ['gcr.io/$PROJECT_ID/flerpo_diagnoskod:$SHORT_SHA']
