@@ -7,7 +7,7 @@ steps:
 
 
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['gcloud', 'app', 'deploy', ' --project', '$project_name']
+  args: ['app', 'deploy', ' --project', '$project_name']
 
 
 images: ['gcr.io/$PROJECT_ID/flerpo_diagnoskod:$SHORT_SHA']
