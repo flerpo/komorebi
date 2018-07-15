@@ -3,5 +3,5 @@ api_version: 1
 threadsafe: false
 
 handlers:
-- url: /diagnoskod
-  script: /service/diagnoskod.py
+- url: /
+  script: service/diagnoskod.py
