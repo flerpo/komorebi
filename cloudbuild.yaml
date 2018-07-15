@@ -13,4 +13,4 @@ steps:
   args: ['app', 'deploy', '--project', '$PROJECT_ID']
 
 
-images: ['gcr.io/$PROJECT_ID/flerpo_diagnoskod:$SHORT_SHA']
+#images: ['gcr.io/$PROJECT_ID/flerpo_diagnoskod:$SHORT_SHA']
