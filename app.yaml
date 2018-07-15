@@ -4,4 +4,4 @@ threadsafe: false
 
 handlers:
 - url: /diagnoskod
-  script: service/diagnoskod.py
+  script: /service/diagnoskod.py
